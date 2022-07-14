@@ -18,7 +18,7 @@ html, body {
 
 .sidebar {
     background-color: white;
-    width: 245px;
+    width: 260px;
     padding: 15px;
     box-sizing: border-box;
     flex-direction: column;
@@ -41,7 +41,7 @@ html, body {
     font-size: 16px;
     line-height: 16px;
     text-align: center;
-    color: black;
+    color: #1a237e;
 }
 
 .sidebar.hide .list-item .description {
@@ -50,6 +50,7 @@ html, body {
 
 .sidebar .list-item .icon {
     margin-right: 12px;
+    color: #1a237e;
 }
 
 .sidebar .list-item {
@@ -99,7 +100,7 @@ html, body {
 }
 
 #menu-label:before {
-    top: o;
+    top: 0;
 }
 
 #menu-label:after {
@@ -182,19 +183,19 @@ html, body {
 }
 
 .card1 {
-    background-color: #eeeeee;
+    background-color: #f5f5f5;
 }
 
 .card2 {
-    background-color: #fff8e1;
+    background-color: #ffffe6;
 }
 
 .card3 {
-    background-color: #eeeeee;
+    background-color: #f5f5f5;
 }
 
 .card4 {
-    background-color: #e0f7fa;
+    background-color: #e6f2ff;
 }
 
 .card {
@@ -250,5 +251,13 @@ html, body {
 }
 
 .topuptabel {
+    background-color: #f5f5f5;
+}
+
+.chart {
+    border-radius: 10px;
+}
+
+.chartContainer {
     background-color: #f5f5f5;
 }
