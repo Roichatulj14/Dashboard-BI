@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group - Dashboard BI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../fontawesome-free/css/all.min.css">
+
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navigation navbar bg-white shadow-sm">
+        <div class="container-fluid position-fix">
+          <a class="navbar-brand" href="#">
+            <img src="../../assets/ikonlangitpay.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+            <!-- <img src="/../assets/langitpay.png" alt="" width="100" height="20" class="d-inline-block align-text-bottom"> -->
+            
+          </a>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="#">
+                <i class="fa-solid fa-bullhorn"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">
+                <i class="fa-regular fa-bell"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">
+                    <img class="img-profile rounded-circle" width="30" height="30" src="../../assets/user_dev.png">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </nav>    
+
+    <div class="sidenav container-fluid">
+        <div class="sidebar border">
+            <div class="list-item">
+                <a href="../../index.html" class="nav-link">
+                    <i class="icon fa-solid fa-home"></i>
+                    <span class="description">Dashboard</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../customer/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-users"></i>
+                    <span class="description">Customer</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../product/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-th"></i>
+                    <span class="description">Product</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../supplier/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-user-tag"></i>
+                    <span class="description">Supplier</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../company-profile/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-building"></i>
+                    <span class="description">Company Profile</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../transaction/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-shopping-bag"></i>
+                    <span class="description">Transaction</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../transaction-note/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-clipboard"></i>
+                    <span class="description">Transaction Note</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../delivery-method/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-truck"></i>
+                    <span class="description">Delivery Method</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../payment-method/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-credit-card"></i>
+                    <span class="description">Payment Method</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../product-category/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-tags"></i>
+                    <span class="description">Product Category</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../customer-level/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-layer-group"></i>
+                    <span class="description">Customer Level</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../group/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-folder"></i>
+                    <span class="description">Group</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div id="menu-button">
+                <input type="checkbox" id="menu-checkbox">
+                <label for="menu-checkbox" id="menu-label">
+                    <div id="hamburger"></div>
+                </label>
+            </div>
+            <div class="m-3">
+                <div class="card shadow border-top-0 border-end-0 border-bottom-0 border-4">
+                    <div class="card-header">
+                        <span style="font-size: 18pt; font-weight: bold">Edit Group</span>
+                    </div>
+                    <form>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="">Name</label>
+                                        <input type="text" class="form-control is-invalid" placeholder="Enter Name">
+                                        <span class="invalid-feedback">
+                                            The name field is required
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End of Main -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="cart-top-up.js"></script>
+    <script src="cart-transaksi-digital.js"></script>
+    <script src="chart-pulsa.js"></script>
+    <script src="chart-data.js"></script>
+    <script src="chart-all.js"></script>
+</body>
+</html>
