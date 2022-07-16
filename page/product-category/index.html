@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transaction Note - Dashboard BI</title>
+    <title>Product Category - Dashboard BI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../style.css">
     <link rel="stylesheet" type="text/css" href="../../fontawesome-free/css/all.min.css">
@@ -54,7 +54,7 @@
     </nav>    
 
     <div class="sidenav container-fluid">
-        <div class="sidebar border">
+        <div class="sidebar border hide">
             <div class="list-item">
                 <a href="../../index.html" class="nav-link">
                     <i class="icon fa-solid fa-home"></i>
@@ -139,13 +139,13 @@
             <div class="m-3">
                 <div class="card shadow border-top-0 border-end-0 border-bottom-0 border-4">
                     <div class="card-header">
-                        <span style="font-size: 18pt; font-weight: bold">List Transaction Note</span>
+                        <span style="font-size: 18pt; font-weight: bold">List Product Category</span>
                     </div>
                     <div class="card-body">
-                        <a href="create.html" class="btn btn-primary mb-3"><i class="fa fa-plus"></i> Create Transaction Note</a>
+                        <a href="create.html" class="btn btn-primary mb-3"><i class="fa fa-plus"></i> Create Product Category</a>
                         <div class="mb-3">
                             <div class="alert alert-success">
-                                Transaction Note Successfully saved
+                                Product Category Successfully saved
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -173,7 +173,13 @@
                                     <tr>
                                         <th scope="col">#</th>
                                         <th scope="col">Action</th>
+                                        <th scope="col">Product Code</th>
                                         <th scope="col">Name</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Pictures</th>
+                                        <th scope="col">Levels</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Fields</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -183,15 +189,15 @@
                                             <a href="edit.html" type="button" class="btn btn-sm btn-primary">EDIT</a>
                                             <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">DELETE</button>
                                         </td>
-                                        <td>Sukses</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
+                                        <td>001</td>
+                                        <td>Gadget</td>
+                                        <td>Elektronik</td>
                                         <td>
-                                            <a href="edit.html" type="button" class="btn btn-sm btn-primary">EDIT</a>
-                                            <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">DELETE</button>
+                                            <img src="../../assets/gadget.jpg" style="width: 80px" alt="">
                                         </td>
-                                        <td>Gagal</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><span class="badge bg-warning text-dark">INACTIVE</span></td>
                                     </tr>
                                 </tbody>
                             </table>
