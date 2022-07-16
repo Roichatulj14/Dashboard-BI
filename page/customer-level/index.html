@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Level - Dashboard BI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../fontawesome-free/css/all.min.css">
+
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navigation navbar bg-white shadow-sm">
+        <div class="container-fluid position-fix">
+          <a class="navbar-brand" href="#">
+            <img src="../../assets/ikonlangitpay.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+            <!-- <img src="/../assets/langitpay.png" alt="" width="100" height="20" class="d-inline-block align-text-bottom"> -->
+            
+          </a>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="#">
+                <i class="fa-solid fa-bullhorn"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">
+                <i class="fa-regular fa-bell"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">
+                    <img class="img-profile rounded-circle" width="30" height="30" src="../../assets/user_dev.png">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </nav>    
+
+    <div class="sidenav container-fluid">
+        <div class="sidebar border">
+            <div class="list-item">
+                <a href="../../index.html" class="nav-link">
+                    <i class="icon fa-solid fa-home"></i>
+                    <span class="description">Dashboard</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../customer/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-users"></i>
+                    <span class="description">Customer</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../product/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-th"></i>
+                    <span class="description">Product</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../supplier/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-user-tag"></i>
+                    <span class="description">Supplier</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../company-profile/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-building"></i>
+                    <span class="description">Company Profile</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../transaction/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-shopping-bag"></i>
+                    <span class="description">Transaction</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../transaction-note/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-clipboard"></i>
+                    <span class="description">Transaction Note</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../delivery-method/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-truck"></i>
+                    <span class="description">Delivery Method</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../payment-method/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-credit-card"></i>
+                    <span class="description">Payment Method</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../product-category/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-tags"></i>
+                    <span class="description">Product Category</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../customer-level/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-layer-group"></i>
+                    <span class="description">Customer Level</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="../group/index.html" class="nav-link">
+                    <i class="icon fa-solid fa-folder"></i>
+                    <span class="description">Group</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div id="menu-button">
+                <input type="checkbox" id="menu-checkbox">
+                <label for="menu-checkbox" id="menu-label">
+                    <div id="hamburger"></div>
+                </label>
+            </div>
+            <div class="m-3">
+                <div class="card shadow border-top-0 border-end-0 border-bottom-0 border-4">
+                    <div class="card-header">
+                        <span style="font-size: 18pt; font-weight: bold">List Customer Level</span>
+                    </div>
+                    <div class="card-body">
+                        <a href="create.html" class="btn btn-primary mb-3"><i class="fa fa-plus"></i> Create Customer Level</a>
+                        <div class="mb-3">
+                            <div class="alert alert-success">
+                                Customer Level Successfully saved
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" wire:model="search" placeholder="search...">
+                            </div>
+                            <div class="col-md-6">
+                                <div style="text-align: end">
+                                    <select class="form-control" wire:model="paging">
+                                        <option value="2">2</option>
+                                        <option value="5">5</option>
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="500">500</option>
+                                        <option value="1000">1000</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-bordered table-striped text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Action</th>
+                                        <th scope="col">Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <a href="edit.html" type="button" class="btn btn-sm btn-primary">EDIT</a>
+                                            <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">DELETE</button>
+                                        </td>
+                                        <td>Gold</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <a href="edit.html" type="button" class="btn btn-sm btn-primary">EDIT</a>
+                                            <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">DELETE</button>
+                                        </td>
+                                        <td>Platinum</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <a href="edit.html" type="button" class="btn btn-sm btn-primary">EDIT</a>
+                                            <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">DELETE</button>
+                                        </td>
+                                        <td>Silver</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Main -->
+        <!-- Modal Delete -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Delete Confirm</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure want to delete?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger close-modal" data-bs-dismiss="modal">Yes, Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal Delete -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="cart-top-up.js"></script>
+    <script src="cart-transaksi-digital.js"></script>
+    <script src="chart-pulsa.js"></script>
+    <script src="chart-data.js"></script>
+    <script src="chart-all.js"></script>
+</body>
+</html>
