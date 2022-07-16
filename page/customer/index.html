@@ -136,123 +136,125 @@
                     <div id="hamburger"></div>
                 </label>
             </div>
-            <div class="card shadow border-top-0 border-end-0 border-bottom-0 border-4">
-                <div class="card-header">
-                    <span style="font-size: 18pt; font-weight: bold">List Customer</span>
-                </div>
-                <div class="card-body">
-                    <a href="create.html" class="btn btn-primary mb-3"><i class="fa fa-plus"></i> Create Customer</a>
-                    <div class="mb-3">
-                        <div class="alert alert-success">
-                            Customer Successfully saved
-                        </div>
+            <div class="m-3">
+                <div class="card shadow border-top-0 border-end-0 border-bottom-0 border-4">
+                    <div class="card-header">
+                        <span style="font-size: 18pt; font-weight: bold">List Customer</span>
                     </div>
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" wire:model="search" placeholder="search...">
-                        </div>
-                        <div class="col-md-6">
-                            <div style="text-align: end">
-                                <select class="form-control" wire:model="paging">
-                                    <option value="2">2</option>
-                                    <option value="5">5</option>
-                                    <option value="10">10</option>
-                                    <option value="20">20</option>
-                                    <option value="50">50</option>
-                                    <option value="100">100</option>
-                                    <option value="500">500</option>
-                                    <option value="1000">1000</option>
-                                </select>
+                    <div class="card-body">
+                        <a href="create.html" class="btn btn-primary mb-3"><i class="fa fa-plus"></i> Create Customer</a>
+                        <div class="mb-3">
+                            <div class="alert alert-success">
+                                Customer Successfully saved
                             </div>
                         </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" wire:model="search" placeholder="search...">
+                            </div>
+                            <div class="col-md-6">
+                                <div style="text-align: end">
+                                    <select class="form-control" wire:model="paging">
+                                        <option value="2">2</option>
+                                        <option value="5">5</option>
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="500">500</option>
+                                        <option value="1000">1000</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-bordered table-striped text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Action</th>
+                                        <th scope="col">Customer Code</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Store Name</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Balance</th>
+                                        <th scope="col">Bonus Balance</th>
+                                        <th scope="col">Point</th>
+                                        <th scope="col">Commission</th>
+                                        <th scope="col">Level ID</th>
+                                        <th scope="col">ID Card</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Transaction</th>
+                                        <th scope="col">Top Up</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <a href="edit.html" type="button" class="btn btn-sm btn-primary">EDIT</a>
+                                            <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">DELETE</button>
+                                        </td>
+                                        <td>822901841</td>
+                                        <td>Eko Susanto</td>
+                                        <td>Eko Store</td>
+                                        <td>089929883243</td>
+                                        <td>ekostore@g.com</td>
+                                        <td>Rp. 500.000</td>
+                                        <td>Rp. 0</td>
+                                        <td>Rp. 0</td>
+                                        <td>Rp. 0</td>
+                                        <td>Platinum</td>
+                                        <td>NOT_APPLIED</td>
+                                        <td><span class="badge bg-warning text-dark">INACTIVE</span></td>
+                                        <td>Rp. 0</td>
+                                        <td>Rp. 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <a href="edit.html" type="button" class="btn btn-sm btn-primary">EDIT</a>
+                                            <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">DELETE</button>
+                                        </td>
+                                        <td>822901841</td>
+                                        <td>Raoudhlilla</td>
+                                        <td>Raoudhlilla Store</td>
+                                        <td>09898345436</td>
+                                        <td>Raoudhlilla@g.com</td>
+                                        <td>Rp. 700.000</td>
+                                        <td>Rp. 0</td>
+                                        <td>Rp. 0</td>
+                                        <td>Rp. 0</td>
+                                        <td>Platinum</td>
+                                        <td>APPLIED</td>
+                                        <td><span class="badge bg-success">ACTIVE</span></td>
+                                        <td>Rp. 0</td>
+                                        <td>Rp. 0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <div class="table-responsive">
-                        <table class="table table-hover table-bordered table-striped text-nowrap">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Action</th>
-                                    <th scope="col">Customer Code</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Store Name</th>
-                                    <th scope="col">Phone</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Balance</th>
-                                    <th scope="col">Bonus Balance</th>
-                                    <th scope="col">Point</th>
-                                    <th scope="col">Commission</th>
-                                    <th scope="col">Level ID</th>
-                                    <th scope="col">ID Card</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Transaction</th>
-                                    <th scope="col">Top Up</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>
-                                        <a href="edit.html" type="button" class="btn btn-sm btn-primary">EDIT</a>
-                                        <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">DELETE</button>
-                                    </td>
-                                    <td>822901841</td>
-                                    <td>Eko Susanto</td>
-                                    <td>Eko Store</td>
-                                    <td>089929883243</td>
-                                    <td>ekostore@g.com</td>
-                                    <td>Rp. 500.000</td>
-                                    <td>Rp. 0</td>
-                                    <td>Rp. 0</td>
-                                    <td>Rp. 0</td>
-                                    <td>Platinum</td>
-                                    <td>NOT_APPLIED</td>
-                                    <td><span class="badge bg-warning text-dark">INACTIVE</span></td>
-                                    <td>Rp. 0</td>
-                                    <td>Rp. 0</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>
-                                        <a href="edit.html" type="button" class="btn btn-sm btn-primary">EDIT</a>
-                                        <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">DELETE</button>
-                                    </td>
-                                    <td>822901841</td>
-                                    <td>Raoudhlilla</td>
-                                    <td>Raoudhlilla Store</td>
-                                    <td>09898345436</td>
-                                    <td>Raoudhlilla@g.com</td>
-                                    <td>Rp. 700.000</td>
-                                    <td>Rp. 0</td>
-                                    <td>Rp. 0</td>
-                                    <td>Rp. 0</td>
-                                    <td>Platinum</td>
-                                    <td>APPLIED</td>
-                                    <td><span class="badge bg-success">ACTIVE</span></td>
-                                    <td>Rp. 0</td>
-                                    <td>Rp. 0</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="card-footer">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                </div>
-                <div class="card-footer">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </div>
